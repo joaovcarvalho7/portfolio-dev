@@ -1,4 +1,11 @@
-// Função para enviar o formulário de contato
+function baixarPDF() {
+    // Caminho do arquivo PDF dentro da pasta 'correct'
+    const url = 'correct/JoaoVitor_Curriculo_Tecnico_TI.pdf';  // Caminho do arquivo PDF
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = 'JoaoVitor_Curriculo_Tecnico_TI.pdf';  // Nome do arquivo ao ser baixado
+    link.click();
+}
 document.getElementById('contact-form').addEventListener('submit', function(event) {
     event.preventDefault();
     
